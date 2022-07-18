@@ -1,6 +1,7 @@
 # Exploring LEGO Dataset with SQL | Data-Analysis Project
 
 In this project, i went through the data model of the Rebrickable LEGO Dataset and then create a database for analytics. i went through real scenarios of answering questions about data with SQL. i went from basic SQL queries to exploring complex problems using JOINS, CTEs, and WINDOW functions.
+
 I work on the following skills:
 
 - Using SQL Server Integration Services (SSIS) to import data from CSV files into SQL Server Database.
@@ -12,7 +13,7 @@ I work on the following skills:
 
 
 ## LEGO Data Analysis - Rebrickable
-The dataset is from  https://rebrickable.com/downloads/
+The dataset is from  (https://rebrickable.com/downloads/)
 
 From the Rebrickable website - "The LEGO Parts/Sets/Colors and Inventories of every official LEGO set in the Rebrickable database is available for download as csv files here. These files are automatically updated daily. If you need more details, you can use the API which provides real-time data, but has rate limits that prevent bulk downloading of data."
 
