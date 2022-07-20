@@ -26,7 +26,7 @@ Rebrickable provides this database to be used for any purpose.
 ![](LEGO_DataModeling.png)
 
 
-## CREATE VIEW
+###  CREATE VIEW
 
 ```
 Create view [dbo].[analytics_main] as
@@ -47,7 +47,7 @@ GO
 
 
 
-## What is the total number of parts per theme
+### What is the total number of parts per theme
 ```
 --select * from dbo.analytics_main
 select theme_name, sum(num_parts) as total_num_parts 
@@ -68,7 +68,7 @@ group by year
 order by 2 desc
 ```
 
-## How many sets where created in each Century in the dataset
+### How many sets where created in each Century in the dataset
 
 ```
 select Century, count(set_num) as total_set_num
@@ -77,7 +77,7 @@ from dbo.analytics_main
 group by Century
 ```
 
-## What percentage of sets ever released in the 21st Century were Trains Themed 
+###  What percentage of sets ever released in the 21st Century were Trains Themed 
 
 ```
 ;with cte as 
@@ -97,7 +97,7 @@ where theme_name like '%Star wars%'
 ```
 
 
-## What was the popular theme by year in terms of sets released in the 21st Century
+### What was the popular theme by year in terms of sets released in the 21st Century
 
 ```
 select year, theme_name, total_set_num
@@ -113,7 +113,7 @@ order by year desc
 ```
 
 
-## What is the most produced color of lego ever in terms of quantity of parts?
+###  What is the most produced color of lego ever in terms of quantity of parts?
 
 ```
 select color_name, sum(quantity) as quantity_of_parts
